@@ -71,9 +71,12 @@
     text-shadow: none;
   }
 
-  .about-me{
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
     border: 20px 20px 20px 20px;
     padding: 10px 10px 10px 10px;
+    justify-content: center;
     border-style: solid;
     text-align: center;
     background-color: var(--tertiary-color);
@@ -83,21 +86,20 @@
     color: white;
   }
 
-  .work{
-    text-align: center;
+
+  .work {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
   }
 
   .work h1{
     color: white;
   }
 
-  .projects{
-    margin: 0 auto;
-    padding: 10px 10px 10px 10px;
-    border: 0 10px 10px 10px;
-  }
 
   .projects ul{
     list-style: none;
@@ -106,7 +108,7 @@
 
   .projects ul li{
     display: inline-flex;
-
+    flex-wrap: wrap;
     color:white;
     margin: 20 auto;
     padding: 20px 20px 20px 20px;
@@ -114,36 +116,44 @@
     border-style: solid;
   }
   .run-buddy{
-    width: 600px;
-    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
     background-image: url("../images/run-buddy.jpg");
   }
   
   .placeholders ul{
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 15 15 15 15;
   }
+
   .placeholder-one{
-    width: 150px;
+    display: flex;
     height: 200px;
     background-image: url("../images/server-connections.jpg");
   }
 
   .placeholder-two{
-    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
     height: 200px;
     background-image: url("../images/web-design.jpg");
   }
 
   .placeholder-three{
-    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
     height: 200px;
     background-image: url("../images/coding.jpg");
   }
 
   .placeholder-four{
-    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
     height: 200px;
     background-image: url("../images/application.jpg");
   }
@@ -196,10 +206,11 @@
   }
   
   @media screen and (max-width: 768px) {
-    .about-me{
+    .hero {
+      flex-shrink: 2;
       padding-bottom: 0;
       justify-content: center;
-      position: relative
+      position: relative;
     }
   
     .about-me h1 {
@@ -208,28 +219,36 @@
     }
   
     .work {
+      flex-shrink: 2;
       text-align: center;
       width: 100%;
 
-    }
-
-    .placeholders {
-      flex: 3 100%;
-      text-align: center;
-      width: 100%;
     }
 
   }
   
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 500px) {
+
+    .hero {
+      flex-shrink: 2 120px;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+    }
 
     .work {
-      text-align: center;
-      flex: 2 50%;
+      flex-shrink: 2 120px;
+      justify-content: center;
+      position: relative;
+      width: 100%;
     }
 
-    .placeholders {
-      flex: 2 50%;
+    .projects {
+      flex-shrink: 2 120px;
+      justify-content: center;
+      position: relative;
+      width: 100%;
     }
+
 
   }
