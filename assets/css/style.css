@@ -92,7 +92,7 @@
   .work h1{
     color: white;
   }
-  
+
   .projects{
     margin: 0 auto;
     padding: 10px 10px 10px 10px;
@@ -225,18 +225,11 @@
 
     .work {
       text-align: center;
-      flex: 0 100%;
+      flex: 2 50%;
     }
-
-    .run-buddy {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative
-    }
-
 
     .placeholders {
-      flex: 0 100%;
+      flex: 2 50%;
     }
 
   }
