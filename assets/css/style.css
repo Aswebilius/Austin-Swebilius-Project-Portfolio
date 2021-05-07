@@ -84,9 +84,15 @@
   }
 
   .work{
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
   }
+
+  .work h1{
+    color: white;
+  }
+  
   .projects{
     margin: 0 auto;
     padding: 10px 10px 10px 10px;
@@ -190,25 +196,47 @@
   }
   
   @media screen and (max-width: 768px) {
-    .projects{
+    .about-me{
       padding-bottom: 0;
       justify-content: center;
       position: relative
     }
+  
+    .about-me h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .work {
+      text-align: center;
+      width: 100%;
 
-    .placeholders ul {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative
+    }
+
+    .placeholders {
+      flex: 3 100%;
+      text-align: center;
+      width: 100%;
     }
 
   }
   
   @media screen and (max-width: 575px) {
-    .work{
+
+    .work {
+      text-align: center;
+      flex: 0 100%;
+    }
+
+    .run-buddy {
       padding-bottom: 0;
       justify-content: center;
       position: relative
     }
+
+
+    .placeholders {
+      flex: 0 100%;
+    }
+
   }
-  
